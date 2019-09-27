@@ -1,0 +1,521 @@
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   margin: 0;
+   font-family: 'Oxygen', sans-serif; 
+}
+
+header {
+   background: linear-gradient(rgba(41, 35, 92, 0.9),
+                rgba(0, 162, 155, .7)),
+               url(../imgs/eso0907a.jpg);
+   height: 100vh; /* Hacemos que la imagen tome el 100% de la pantalla incluso en móviles*/
+   background-position: center;
+   background-size: cover;
+   /* position: relative; */
+}
+
+h1 {
+   font-size: 40px;
+   color: #FFF;
+   margin: 0;
+   letter-spacing: 5px;
+}
+
+h2 {
+   font-size: 25px;
+   color: #FFF;
+}
+
+header .container {
+   display: flex;
+   justify-content: space-between;  /* justificar el contenido a los espacios */
+}
+
+header ul {
+   display: flex;
+}
+
+header ul li {
+   list-style: none; /* quitamos estilo de lista por default*/
+   margin-right: 30px; /* separamos los elemetnos con 15px*/
+}
+
+nav ul li a{
+   color: #FFF;
+   font-size: 18px;
+}
+
+a {
+   text-decoration: none;
+}
+
+p.logo {
+   font-size: 20px;
+   color:#FFF;
+}
+
+.container{ 
+   max-width: 1280px;
+   width:90%;
+   margin: auto;
+}
+
+.container-title {
+   text-align: center;
+}
+
+.container-title a, .container-about-me a, #blog a, #why-wait a, #contact input[type="submit"] {
+   font-size: 14px;
+   color: #fff;
+   background: #5cb8ff;
+   padding: 14px 24px;
+   width: 128px;
+   display: inline-block; /* toma un elemento en línea y le aplica propiedades de un elemento de bloque */
+   text-align: center
+}
+
+#container-title-flex {
+   display:flex; /* pone el div uno al lado del otro, pero el div es único y prepara para poder utilizar justify-content*/
+   justify-content: center;
+   margin: 18vh 0;
+   max-width: 1580px; /* ponemos un ancho máximo que el .container para que se agrande más su ancho y vaya hacia la derecha*/
+   width: 100%;
+   text-align: center;
+}
+
+#container-title-flex h1{
+   font-weight: bold;
+}
+
+#container-title-flex h2{
+   font-weight: normal;
+}
+
+#my-work, #why-me, #blog, #contact, #services {
+   padding: 60px 0px;
+}
+
+/* #services {
+   padding: 100px 0px;
+} */
+
+
+/* About me section */
+
+h3 {
+   text-align: center;
+   font-size: 55px;
+   font-weight: normal;
+}
+
+.computers{
+   width: 45%;
+}
+
+.computers img{
+   width: 80%;
+   margin: 0;
+   padding: 40px;
+}
+
+#about-me .container-about-me {
+   display: flex;
+   justify-content: space-around;
+}
+
+#about-me .text {
+   width: 42%;
+   margin: 0;
+   padding: 40px;
+   font-size: 18px;
+   line-height: 30px
+}
+
+
+/* SERVICES SECTION  */
+
+h4 {
+   font-size: 30px;
+   margin: 0;
+}
+
+.services-container {
+   display: flex;
+   flex-wrap: wrap; /* Detecta el espacio ocupado por un elemento y le asigna suficiente espacio*/
+   justify-content: space-around;
+   color: #fff;
+}
+
+.service {
+   width: 40%;
+   padding: 34px 30px 38px 30px;
+   border-radius: 10px;
+   margin-bottom: 40px;
+   position: relative;
+}
+
+.service p {
+   margin-bottom: 20px;
+   height: 200px;
+}
+
+.services-container .color-one{
+   background: linear-gradient(steelblue, #ADD8E6);
+   box-shadow: 0 10px 30px 0 rgba(21, 20, 10, .3);
+}
+
+.services-container .color-two{
+   background: linear-gradient(Teal, rgb(115, 185, 153));
+   box-shadow: 0 10px 30px 0 rgba(21, 20, 10, 0.3); /* generamos sombra */
+}
+
+.waves {
+   position: absolute;
+   width: 100%;
+   left: 0;
+   bottom: 0;
+}
+
+.icon {
+   float: right;
+}
+
+/* MY WORK */
+
+button.owl-prev, button.owl-next {
+   font-size: 40px !important;
+}
+
+#my-work span {
+   color: #4783b4;
+}
+
+/* WHY WORK WITH ME  */
+
+.container-work-with-me {
+   display: flex;
+   flex-wrap: wrap; 
+   justify-content: space-around;
+}
+
+#why-me .item {
+   width:28%;
+   text-align: center;
+}
+
+#why-me ul li {
+   list-style: none;
+}
+
+#why-me ul li:nth-child(2) {
+   font-weight: bold;
+   font-size: 19px;
+   margin-top: 5px;
+   margin-bottom: 20px;
+}
+
+#why-me ul li:nth-child(3) {
+   line-height: 30px;
+}
+
+/* BLOG SECTION  */
+
+#blog {
+   background: #f9fafc;
+}
+
+#blog h4 {
+   font-size: 23px;
+   margin-bottom: 15px;
+   margin: 0;
+}
+
+#blog p {
+   color: #5A6169;
+   line-height: 25px;
+   font-size: 16px;
+}
+
+#blog .container-posts {
+   display: flex;
+   justify-content: space-around;
+   /* flex-wrap: wrap;  */
+}
+
+#blog .post {
+   width: 40%;
+   box-shadow: 1px 1px 14px #ccc;
+}
+
+#blog img {
+   width:100%;
+}
+
+#blog .content{
+   background: white; 
+   padding: 20px;
+}
+
+#blog a {
+   width: 87px;
+}
+
+
+/* WHY WAIT  */
+
+#why-wait {
+   /* background: linear-gradient(steelblue, #ADD8E6); */
+   text-align: center;
+   padding: 50px 0;
+   margin-top: 40px;
+}
+
+#why-wait h3 {
+   font-size: 25px;
+   color: white;
+}
+
+#why-wait .container {
+   min-height: 400px;
+   background: transparent;
+}
+
+/* CONTACT SECTION  */
+
+#contact form {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   width: 77%;
+   margin: auto;
+}
+
+#contact input[type="text"], input[type="email"] {
+   width: 49%;
+   margin-bottom: 15px;
+   padding: 18px 0;
+   border: 0;
+   border-bottom: 1px solid steelblue;
+   font-size:17px;
+}
+
+#contact textarea {
+   border: 0;
+   border-bottom: 1px solid steelblue;
+   padding: 18px 0;
+   width: 100%;
+   font-size: 17px;
+   margin-bottom: 40px; 
+}
+
+#contact input[type="submit"] {
+   width: 166px;
+   margin: auto;
+}
+
+/* CONTACT INFO  */
+
+.contact-info {
+   display: flex;
+   justify-content: space-around;
+   margin-top: 60px;
+}
+
+.contact-info img {
+   width: 28px;
+   vertical-align: middle; /* alinea la imagen en medio verticalmente */
+   margin-right: 10px;
+}
+
+footer {
+   background-color: #2f2f2f;
+   padding: 40px 0;
+   text-align: center;
+   margin-top: 40px;
+}
+
+footer .container {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+footer img {
+   margin: 0 40px;
+   transform: rotate(0);
+   transition: 0.4s;
+}
+
+footer img:hover {
+   transform: rotate(360deg);
+   transition: 0.4s;
+
+}
+
+footer p {
+   color: white;
+   margin-top:40px;
+}
+
+#whatsapp {
+   position: fixed;
+   top: 85%;
+   right: 1%;
+}
+
+.menu-icon {
+   display: none;
+}
+
+::placeholder {
+   font: 14px Arial;
+}
+
+input[type="submit"] {
+   border-style: none;
+}
+
+@media (max-width: 800px) {
+
+   header {
+      height: 100vh;
+   }
+
+   .menu-icon {
+      display: block;
+      float: right;
+      width: 40px;
+      height: 40px;
+      margin-top:15px;
+   }
+
+   header nav {
+      position: absolute;
+      top: 83px;
+      left: 0;
+      width: 100%;
+      display: none;
+   }
+
+   header nav ul {
+      flex-direction: column;
+      width: 100%;
+      height: 268px;
+      background-color: #262c58;
+   }
+
+   header nav ul li {
+      margin-bottom: 23px;
+   }
+
+   h1 {
+      font-size: 31px;
+   }
+
+   h2 {
+      font-size: 20px;
+   }
+
+   #about-me .container-about-me {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+   }
+
+   #about-me .computers{
+      text-align: center;
+      width: 100%;
+   }
+   
+   #about-me .computers img{
+      width: 90%;
+      margin: auto;
+      padding: 0;
+
+   }
+
+   #about-me .text {
+      width: 100%;
+      margin-top: 20px;
+      padding: 0px;
+      font-size: 18px;
+   }
+
+   .services-container {
+      flex-direction: column;
+   }
+
+   .service {
+      width: 85%;
+      padding: 34px 30px 70px 30px;
+   }
+
+   #services .icon {
+      margin-top: 42px;
+   }
+
+   h3 {
+      font-size: 42px;
+  }
+
+  .container-work-with-me {
+      flex-direction: column;
+   }
+
+   #why-me .item {
+      width: 100%;
+   }
+
+   .item ul {
+      padding: 0;
+   }
+
+   #blog .container-posts {
+      flex-direction: column;
+  }
+
+  #blog .post {
+   width: 100%;
+   margin-bottom: 40px;
+   }
+
+   #contact form {
+      width: 100%;
+      flex-direction: column;
+    }
+
+   #contact input[type="text"], input[type="email"] {
+      width: 98%;
+   }
+
+   #contact textarea {
+      width: 98%;
+   }
+
+   .contact-info {
+      margin-top: 0px;
+   }
+}
+
+@media (min-width: 600px) and (max-width:800px) {
+   header {
+      height: 70vh;
+   }
+
+   .service {
+      width: 58%;
+      padding: 34px 30px 69px 30px;
+      margin: auto;
+      margin-bottom: 45px;
+   }
+
+   #blog .post {
+      width: 80%;
+      margin: auto;
+      margin-bottom: 40px;
+   }
+
+}
